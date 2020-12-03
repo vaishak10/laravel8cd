@@ -5,7 +5,7 @@ pipeline {
             environment {
                 //DB_HOST = credentials("laravel-host")
                 DB_HOST = "localhost"
-                sh "echo $DB_HOST"
+                sh "echo ${DB_HOST}"
                 DB_DATABASE = credentials("laravel-database")
                 DB_USERNAME = credentials("laravel-user")
                 DB_PASSWORD = credentials("laravel-password")
